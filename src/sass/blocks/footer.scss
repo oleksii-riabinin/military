@@ -1,0 +1,77 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.footer{
+  background: url("/src/sass/img/footer.png") no-repeat ;
+  
+
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+   
+  }
+
+  &__inform{
+    color:$white;
+  
+  }
+
+}
+
+.rating {
+  max-width: 581px;
+  margin: 20px auto;
+  border: 1px solid $orange;
+  background-color: $grey-dark;
+
+  .row {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    border-bottom: 1px solid $orange;
+   
+    &:last-child {
+      border-bottom: none;
+    }
+    &__team{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: $white;
+      padding: 10px 19px;
+      font-weight: 500;
+      font-size: 20px;
+
+    }
+    &__num{
+      text-align: center;
+      width: 72px;
+      border-right: 1px solid $orange;
+      padding: 10px 19px;
+        font-weight: 400;
+        font-size: 20px;
+
+    }
+  }
+
+     &__header {
+       background-color: $orange;
+        padding: 10px 29px;
+        display: flex;
+        justify-content: flex-start;
+      &-row{
+          width: 72px;
+          font-weight: 400;
+          
+          font-size: 20px;
+      }
+      &-team{
+        color:$dark;
+        font-weight: 500;
+        font-size: 20px;
+        
+      }
+     }
+
+  
+}

@@ -1,0 +1,172 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.result{
+  background-color: $dark;
+  margin-top: 140px;
+  &__title{
+      font-weight: 700;
+      font-size: 32px;
+      color:$white;
+      margin: 0 0 40px 0;
+  }
+  &__buttons{
+    display: flex;
+    gap: 0;  
+  }
+  &__btn{
+    width: 152px;
+      min-height: 60px;
+      padding: 15px 31px;
+      border:1px solid $orange;
+      font-weight: 700;
+      font-size: 18px;
+      color:$white;
+      background: inherit;
+      &-battles{
+        background-color: $orange;
+      }
+  }
+        &__card {
+          position:relative;     
+          background-color: $grey-dark;
+            width: 350px;
+          border-radius: 10px;
+          margin-top: 100px;
+          padding: 47px 35px;
+          
+         
+
+           
+          
+
+        
+
+          // &-watch{
+          //   display: flex;
+          //   background-color: $orange;
+          //   margin: 0;
+          //   padding:11px 20px ;
+          //   width:140px;
+          //   height: 40px;
+          //   border-radius:4px;
+          //   justify-self: center;
+            
+            
+          //   img{
+          //    width:40px;
+          //    height: 40px; 
+          //   }
+          //   &-text{
+          //   text-transform: uppercase;
+          //     font-weight: 400;
+          //     color:$white;
+          //     font-size: 14px;
+          //     padding: 0;
+          //     align-self:center;
+              
+          //   }
+          // }
+
+          &-header {
+            padding-top: 0;
+          }
+    
+          &-wrapper {
+            display: flex;
+            justify-content: space-between;
+          }
+    
+          &-title {
+            color: $white;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0;
+          }
+    
+          &-text {
+            display: flex;
+            align-self: center;
+            justify-self: center;
+          }
+    
+          &-line {
+            height: 1px;
+            background-color: $orange;
+            margin-top: 22px;
+          }
+    
+          &-main {
+            padding-top: 32px;
+            
+          }
+    
+          &-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            column-gap: 20px;
+          }
+    
+          &-information {
+            justify-content: space-between;
+            display: flex;
+            margin-top: 22px;
+          }
+    
+          &-information-name {
+            margin: 0;
+            ul {
+              padding: 0;
+            }
+          }
+    
+          &-information-li {
+            list-style-type: none;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 35px;
+            color: $white;
+          }
+    
+          &-button {
+            display: flex;
+            align-self: center;
+            row-gap: 3px;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 14px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: $white;
+            border: 1px solid $orange;
+            padding: 5px 10px 5px 10px;
+            text-align: center;
+          }
+    
+          &-footer-wrapper {
+            display: flex;
+            align-items: center;
+            
+          }
+    
+          &-footer-text {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: $grey;
+            margin-top: 10px;
+            
+          }
+
+                    
+        }
+        &__card-battles{
+          display: flex;
+          column-gap:20px;
+          row-gap: 20px;
+          flex-wrap: wrap;
+          flex-direction: row;
+        
+        }
+}

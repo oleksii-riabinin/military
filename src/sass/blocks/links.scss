@@ -1,0 +1,29 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.links {
+  display: flex;
+  justify-content: space-between;
+
+
+
+  &-social {
+    display: flex;
+    align-self: center;
+    column-gap: 30px;
+  }
+
+  &-icon {
+    color: $white;
+    margin: 0;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.line {
+  height: 1px;
+  background-color: $orange;
+  margin-top: 28px;
+
+}

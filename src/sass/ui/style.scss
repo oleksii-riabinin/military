@@ -1,0 +1,18 @@
+//lib
+@use "/src/sass/lib/fontello.scss";
+//base
+@use "/src/sass/base/basic.scss";
+@use "/src/sass/base/mixin.scss";
+@use "/src/sass/base/variables.scss" as *;
+
+//ui
+@use "/src/sass/ui/pxstorem.scss";
+
+//blocks
+@use "/src/sass/blocks/mobile.scss";
+@use "/src/sass/blocks/information.scss";
+@use "/src/sass/blocks/links.scss";
+@use "/src/sass/blocks/result.scss";
+@use "/src/sass/blocks/etaps.scss";
+@use "/src/sass/blocks/footer.scss";
+
