@@ -25,6 +25,11 @@
       &-battles{
         background-color: $orange;
       }
+      &-matches{
+        background-color: $orange;
+      }
+
+      
   }
         &__card {
           position:relative;     
@@ -142,6 +147,7 @@
             border: 1px solid $orange;
             padding: 5px 10px 5px 10px;
             text-align: center;
+           
           }
     
           &-footer-wrapper {
@@ -167,9 +173,35 @@
           row-gap: 20px;
           flex-wrap: wrap;
           flex-direction: row;
-        
+          
         }
 }
+
+      .card__desk{
+        width: 350px;
+          height: 341px;
+          border-radius: 10px;
+          margin-top: 90px;
+          background-color: $grey-dark;
+          padding:40px 34px 31px 34px;
+      &-line{
+        margin-top: 20px;
+        }
+        &-main{
+          padding-top:31px ;
+        }
+        &-icon{
+          width: 50px;
+            height: 50px;
+        }
+        &-information{
+          &-li{
+              font-weight: 700;
+              font-size: 20px;
+              padding-top: 15px;
+          }
+        }
+      }
 
 @media screen and (max-width:1200px) {
   .result {

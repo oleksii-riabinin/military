@@ -76,7 +76,13 @@
       color:$dark;
       border: 1px solid $white;
       border-radius: 5px;
+    &:hover {
+        border: 1px solid $white;
+        background-color: $grey-dark;
+        color:$white;
+        cursor: pointer;
 
+      }
   }
 }
 
