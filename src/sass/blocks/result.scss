@@ -3,6 +3,7 @@
 .result{
   background-color: $dark;
   margin-top: 140px;
+  position: relative;
   &__title{
       font-weight: 700;
       font-size: 32px;
@@ -39,38 +40,6 @@
           margin-top: 100px;
           padding: 47px 35px;
           
-         
-
-           
-          
-
-        
-
-          // &-watch{
-          //   display: flex;
-          //   background-color: $orange;
-          //   margin: 0;
-          //   padding:11px 20px ;
-          //   width:140px;
-          //   height: 40px;
-          //   border-radius:4px;
-          //   justify-self: center;
-            
-            
-          //   img{
-          //    width:40px;
-          //    height: 40px; 
-          //   }
-          //   &-text{
-          //   text-transform: uppercase;
-          //     font-weight: 400;
-          //     color:$white;
-          //     font-size: 14px;
-          //     padding: 0;
-          //     align-self:center;
-              
-          //   }
-          // }
 
           &-header {
             padding-top: 0;
@@ -169,12 +138,47 @@
         }
         &__card-battles{
           display: flex;
-          column-gap:20px;
-          row-gap: 20px;
-          flex-wrap: wrap;
-          flex-direction: row;
           
         }
+
+        &__swiper{
+          // width: 100%;
+            padding-bottom: 80px; // місце для пагінації/кнопок
+            position: relative;
+        }
+        &__wrapper-pagination{
+    position: absolute; // змінив на absolute
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+
+        }
+
+    &__button-prev,
+    &__button-next {
+      padding: 10px;
+      width: 50px;
+      height: 50px;
+      background: transparent;
+      border: 2px solid $orange;
+      border-radius: 50%;
+      display: flex;
+      align-items: center; // додав для центрування стрілки
+      justify-content: center; // додав для центрування стрілки
+      color: $white;
+      cursor: pointer;
+      flex-shrink: 0; // щоб кнопки не стискались
+    }
+   
+            .swiper-pagination-bullet{
+              background-color: $orange;
+            }
+
 }
 
       .card__desk{
@@ -193,6 +197,7 @@
         &-icon{
           width: 50px;
             height: 50px;
+            
         }
         &-information{
           &-li{
@@ -207,4 +212,47 @@
   .result {
     display: none;
   }
+}
+
+@media screen and (min-width:1500px){
+.card__desk{
+        width: 255px;
+          height: 255px;
+          border-radius: 10px;
+          margin-top: 90px;
+          background-color: $grey-dark;
+          padding: 20px 15px 10px 20px;
+
+          &-line {
+              margin-top: 5px;
+            }
+          
+            &-main {
+              padding-top: 15px;
+            }
+          
+            &-icon {
+              width: 40px;
+              height: 40px;
+              
+            }
+          
+            &-information {
+              &-li {
+                font-weight: 700;
+                font-size: 15px;
+                padding-top: 15px;
+              }
+              &-numbers{
+                width: 53px;
+                padding: 5px;
+                
+              }
+              &-cofic{
+                font-size: 10px;
+              }
+            }
+        
+}
+
 }

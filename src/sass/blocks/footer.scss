@@ -11,7 +11,13 @@ width: 100%;
     // height: 100%;
     justify-self: flex-end;
     padding-top: 512px;
-
+will-change: transform, opacity;
+  transform: translateY(-100%);
+    // transition: transform 15s ease, opacity 3s ease;
+    // &.is-visible {
+    //   transform: translateY(0);
+      
+    // }
   //  position: absolute;
   //  top:-100%;
   //  left:50%;
@@ -108,6 +114,7 @@ width: 100%;
 
   
 }
+
 
 @media screen and (max-width:1200px) {
   .footer{
